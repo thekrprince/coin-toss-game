@@ -6,7 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coin Toss Game</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Google Lobster font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,18 +21,20 @@
     </header>
     <section>
       <div class="selected">
-        <p>Player:<span></span></p>
-        <p>Computer:<span></span></p>
+        <p>Player Selected:<span></span></p>
+        <p>Computer Selected:<span></span></p>
       </div>
-      <div><img src="" alt=""></div>
       <div>
+        <img src="/images/coin head.png" alt="coin">
+      </div>
+      <div class="score">
         <p>Player Score: <span>0</span></p>
         <p>Computer Score: <span>0</span></p>
       </div>
       <div class="button-section">
-        <h4></h4>
-        <button>Heads</button>
-        <button>Tails</button>
+        <h4>Make a Selection</h4>
+        <button class="heads-button">Heads</button>
+        <button class="tails-button">Tails</button>
       </div>
     </section>
   </main>
