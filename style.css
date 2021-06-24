@@ -25,6 +25,11 @@ h2 {
   font-size: 20px;
 }
 
+.p-sel,
+.c-sel {
+  margin-left: 10px;
+}
+
 /* Coin Image */
 img {
   width: 350px;
