@@ -5,15 +5,13 @@
 }
 
 .main {
-  width: 100vw;
-  height: 100vh;
   margin: auto;
   text-align: center;
 }
 
 h2 {
   margin: 2rem 0 1rem 0;
-  font-size: 35px;
+  font-size: 45px;
 }
 
 /* Coin selected  */
@@ -29,9 +27,9 @@ h2 {
 
 /* Coin Image */
 img {
-  width: 250px;
-  height: 250px;
-  margin: 3rem;
+  width: 350px;
+  height: 350px;
+  margin: 4rem;
 }
 
 /* Score */
@@ -51,3 +49,28 @@ h4 {
 }
 
 /* Buttons */
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 1rem;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Media Queries */
+
+@media screen and (max-height: 900px) {
+  h2 {
+    margin: 1rem 0 1rem 0;
+    font-size: 35px;
+  }
+
+  img {
+    width: 230px;
+    height: 230px;
+    margin: 3rem;
+  }
+}
