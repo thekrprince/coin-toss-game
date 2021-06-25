@@ -3,8 +3,6 @@ var computerSelected = document.querySelector('.c-sel');
 var coinImg = document.querySelector('#image');
 var playerScore = document.querySelector('.p-score');
 var computerScore = document.querySelector('.c-score');
-// var headsBtn = document.querySelector('.heads-button');
-// var tailsBtn = document.querySelector('.tails-button');
 var winner = document.querySelector('.winner');
 var buttons = document.querySelectorAll('button');
 
