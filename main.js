@@ -3,8 +3,8 @@ var computerSelected = document.querySelector('.c-sel');
 var coinImg = document.querySelector('#image');
 var playerScore = document.querySelector('.p-score');
 var computerScore = document.querySelector('.c-score');
-var headsBtn = document.querySelector('.heads-button');
-var tailsBtn = document.querySelector('.tails-button');
+// var headsBtn = document.querySelector('.heads-button');
+// var tailsBtn = document.querySelector('.tails-button');
 var winner = document.querySelector('.winner');
 var buttons = document.querySelectorAll('button');
 
@@ -57,12 +57,11 @@ function scoreCalculation(random, userPick, computerPick) {
 }
 
 buttons.forEach(function (button) {
-  button.addEventListener('click', function () {
+  button.addEventListener('click', function (e) {
     const random = Math.round(Math.random());
     const computerPick = Math.round(Math.random());
-    const userPick = Math.round(Math.random());
 
-    let computerSelection, userSelection;
+    let computerSelection;
 
     if (computerPick === 1) {
       computerSelection = 'heads';
@@ -70,10 +69,13 @@ buttons.forEach(function (button) {
       computerSelection = 'tails';
     }
 
-    if (userPick === 1) {
-      userSelection = 'heads';
+    const userSelection = e.target.innerText;
+    let userPick;
+
+    if (userSelection === 'heads') {
+      userPick = 1;
     } else {
-      userSelection = 'tails';
+      userPick = 0;
     }
 
     //  Spin the coin
