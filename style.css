@@ -31,10 +31,41 @@ h2 {
 }
 
 /* Coin Image */
-img {
-  width: 350px;
-  height: 350px;
-  margin: 4rem;
+#image {
+  width: 230px;
+  height: 230px;
+}
+
+/* Animation */
+@keyframes toss {
+  0% {
+    background: url(images/coin-tail.png);
+  }
+
+  25% {
+    background: url(images/coin-head.png);
+  }
+
+  50% {
+    background: url(images/coin-head.png);
+  }
+
+  75% {
+    background: url(images/coin-head.png);
+  }
+
+  100% {
+    background: url(images/coin-tail.png);
+  }
+}
+
+.animate {
+  background: url(images/coin-head.png);
+  width: 230px;
+  height: 230px;
+  animation-name: toss;
+  animation-iteration-count: 2;
+  animation-duration: 3s;
 }
 
 /* Score */
