@@ -30,9 +30,9 @@ function displaySelections(user, computer) {
 
 function displayImageRandom(random) {
   if (random === 1) {
-    coinImg.src = 'images/coin-head.png';
+    coinImg.style.backgroundImage = "url('images/coin-head.png')";
   } else {
-    coinImg.src = 'images/coin-tail.png';
+    coinImg.style.backgroundImage = "url('images/coin-tail.png')";
   }
 }
 
